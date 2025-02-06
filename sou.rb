@@ -5,21 +5,21 @@
 class Sou < Formula
   desc "A TUI tool to explore container images"
   homepage "https://github.com/knqyf263/sou"
-  version "0.0.1"
+  version "0.1.0"
   license "MIT"
 
   on_macos do
     on_intel do
-      url "https://github.com/knqyf263/sou/releases/download/v0.0.1/sou_Darwin_x86_64.tar.gz"
-      sha256 "ab1c96746781a11bfb8c7bc8b39948d425942a188a2dd7dfdb3e797dfe25d687"
+      url "https://github.com/knqyf263/sou/releases/download/v0.1.0/sou_Darwin_x86_64.tar.gz"
+      sha256 "7266f9f1a4738f65770c8af3294b6ee5ce4aba11d3814c532d88d7a221b12088"
 
       def install
         bin.install "sou"
       end
     end
     on_arm do
-      url "https://github.com/knqyf263/sou/releases/download/v0.0.1/sou_Darwin_arm64.tar.gz"
-      sha256 "101031c93a8e9bb096f5de057fc19e279d0835d40855f23d5a40d0d96f0bfd65"
+      url "https://github.com/knqyf263/sou/releases/download/v0.1.0/sou_Darwin_arm64.tar.gz"
+      sha256 "8d10780f611ce47e44fe52184fa87250f293f7641532e03822e185cca6d3e21a"
 
       def install
         bin.install "sou"
@@ -30,8 +30,8 @@ class Sou < Formula
   on_linux do
     on_intel do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/knqyf263/sou/releases/download/v0.0.1/sou_Linux_x86_64.tar.gz"
-        sha256 "294046385f857c2039a39390e0d3636e190097695a03662e8acb7dc0d1910656"
+        url "https://github.com/knqyf263/sou/releases/download/v0.1.0/sou_Linux_x86_64.tar.gz"
+        sha256 "2b49050dccc4f4adb9790b2536b80feb1f1d78550fc57a6d172dfb4361460511"
 
         def install
           bin.install "sou"
@@ -40,8 +40,8 @@ class Sou < Formula
     end
     on_arm do
       if Hardware::CPU.is_64_bit?
-        url "https://github.com/knqyf263/sou/releases/download/v0.0.1/sou_Linux_arm64.tar.gz"
-        sha256 "916e9027d1052116165bfc3b3109d9dba8d324472ec23441955710e673ced340"
+        url "https://github.com/knqyf263/sou/releases/download/v0.1.0/sou_Linux_arm64.tar.gz"
+        sha256 "b1ac30c8f65acdf7eb3411973078d9ad664c2beb984a64f9c8e1f4a9937a8ede"
 
         def install
           bin.install "sou"
